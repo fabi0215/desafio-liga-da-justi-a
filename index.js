@@ -6,14 +6,21 @@ let agilidade = [" de 0 - 100"  = 100 , 95 , 60]
 let coragem = [" de 0 - 100"    = 100 , 100 , 90]
 
 let habilidades_dos_herois = [
-[" superman " , (" forca " +  95 ) , (" agilidade " +  95 ) , (" coragem " +  95 ) ],
+[" superman " , (" forca " +  95 ) , (" agilidade " +  95 ) , (" coragem " +  100 ) ],
 [" batman" , 60 , 60 , 100 ],
 [" flash " , 75 , 100 , 90 ],
 ]
 
-console.log = (superman ["forca"] + superman["agilidade"] + superman["coragem"]) / 3
+const superman = {
+    forca: 95,
+    agilidade: 95,
+    coragem: 100
+  };
+  
+  const media = (superman.forca + superman.agilidade + superman.coragem) / 3;
+  console.log(media) =  96,66
+  
 
 
-let nivel_herois = (" superman " +  90 + 95 + 100 / 3)
 
 
